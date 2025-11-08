@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Inclusive Solutions – Inclusieve IT-detacheerder</title>
+<meta content="Inclusive Solutions versterkt IT‑talent en ontzorgt werkgevers met opleiding, plaatsing en coaching voor duurzaam succes." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root { --bg:#ffffff; --surface:#ffffff; --text:#111111; --muted:#5e5e5e; --brand:#0067B8; --brand-hover:#005EA6; --neutral-border:#e6e6e6; --soft:#f5f5f5; --radius: 10px; --shadow: 0 2px 12px rgba(0,0,0,.06); }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; scroll-behavior:smooth; }
+    body { font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", sans-serif; color:var(--text); background:var(--bg); line-height:1.6; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    /* NAV */
+    header.navbar { background:#fff; border-bottom:1px solid var(--neutral-border); position: sticky; top: 0; z-index: 50; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 12px 0; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .brand img { height: 160px; width:auto; display:block; }
+    nav.menu { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+    .menu a { color:#1a1a1a; font-weight:700; padding:10px 12px; border-radius:8px; }
+    .menu a:hover { background: var(--soft); text-decoration:none; }
+    /* HERO */
+    .photoheader { position: relative; background: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat; }
+    .photoheader::after { content:""; position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.35) 40%, rgba(255,255,255,.0) 100%); }
+    .hero-inner { position: relative; z-index: 1; padding: 88px 0 72px; text-align: center; }
+    .hero-inner h1 { color:white; font-size:clamp(26px,4vw,40px); max-width: 900px; margin: 0 auto; }
+    .hero-inner p { color:white; font-weight:500; }
+    .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top: 18px; justify-content:center; }
+    .btn { display:inline-flex; align-items:center; gap:8px; padding: 12px 18px; border-radius: 12px; border:1px solid transparent; font-weight:800; cursor:pointer; transition: background .15s ease, border-color .15s ease; font-size:1rem; }
+    .btn.primary { background: var(--brand); color:#fff; }
+    .btn.primary:hover { background: var(--brand-hover); }
+    .btn.ghost { background: var(--brand); color:#fff; } /* gelijk aan primary zoals gevraagd */
+    /* SECTIONS */
+    section { padding:72px 0; }
+    h2 { font-size: clamp(22px,3.2vw,30px); margin:0 0 12px; }
+    p.lead { font-size: 1.1rem; color:#333; max-width: 70ch; }
+    .grid { display:grid; gap:20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card { background:#fff; border:1px solid var(--neutral-border); border-radius: var(--radius); box-shadow: var(--shadow); padding:20px; }
+    .list { padding-left: 18px; }
+    .list li { margin: 6px 0; }
+    /* TESTIMONIAL */
+    .quote-card { background: #fff; border:1px solid var(--neutral-border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px; position: relative; }
+    .quote-card:before { content:"\201C"; position:absolute; top:-10px; left:12px; font-size:60px; line-height:1; color: #e9eef5; pointer-events:none; }
+    .quote { font-size: 1.05rem; color:#222; margin: 0 0 8px 0; }
+    .quote small { color:#666; }
+    .profile { display:flex; align-items:center; gap:12px; margin-top: 8px; }
+    .avatar { width:44px; height:44px; border-radius:50%; background: var(--soft); display:flex; align-items:center; justify-content:center; font-weight:800; color:#2b2b2b; border:1px solid var(--neutral-border); }
+    .stars { letter-spacing: 2px; color: #f59e0b; font-size: 18px; }
+    .quote-source { color:#555; font-style: italic; margin: 0 0 12px 0; }
+    footer { background:#0b0b0c; color:#e9eef5; padding: 36px 0; margin-top: 28px; }
+    footer a { color:#d1e9ff; }
+    @media (max-width: 640px) {{ .brand img {{height:110px}} }}
+  </style>
+</head>
+<body>
+<header class="navbar">
+<div class="container nav">
+<div class="brand">
+<img alt="Inclusive Solutions logo" src="inclusive_logo.png" style="height:320px;width:auto;"/>
+</div>
+<nav aria-label="Hoofdmenu" class="menu">
+<a href="#visie">Visie &amp; Missie</a>
+<a href="#kernwaarden">Kernwaarden</a>
+<a href="#diensten">Diensten</a>
+<a href="#markten">Markten</a>
+<a class="btn primary" href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<div aria-label="Zakelijke headerafbeelding in blauwtinten" class="photoheader" role="img">
+<div class="container hero-inner">
+<h1>IT-talent versterken. Werkgevers ontzorgen. Samen duurzaam succesvol.</h1>
+<p>Opleiding • Plaatsing • Coaching &amp; begeleiding op de werkvloer</p>
+<div class="cta">
+<a class="btn primary" href="#contact">Plan een kennismaking</a>
+<a class="btn ghost" href="#diensten">Onze diensten</a>
+</div>
+</div>
+</div>
+<main>
+<section id="inleiding">
+<div class="container">
+<h2>Wat wij doen</h2>
+<p class="lead">Wij geloven dat divers talent het verschil maakt. Inclusive Solutions leidt gemotiveerde starters en zij‑instromers op tot directe versterking voor IT‑teams. Met persoonlijke coaching op de werkvloer zorgen we voor duurzame plaatsing en minder verloop.</p>
+</div>
+</section>
+<section id="testimonial" style="background:var(--soft);">
+<div class="container">
+<h2>Testimonial – Hart‑Werk</h2>
+<div class="quote-card">
+<div class="stars">★★★★★</div>
+<p class="quote">“Wij zijn erg tevreden over onze samenwerking met IncludIT. Hun team schakelt proactief met ons voor langlopende opdrachten rond on‑the‑job coaching van data‑engineers die zij langdurig bij opdrachtgevers inzetten. Door deze samenwerking helpen we niet alleen de werkgever, maar ook de (gedetacheerde) werknemer écht verder in hun ontwikkeling. Het is mooi om te zien hoe onze coaches en de professionals van IncludIT elkaar versterken en samen bijdragen aan duurzame groei en werkgeluk.”</p>
+<p class="quote-source">— Hart‑Werk</p>
+<div class="profile">
+<div aria-hidden="true" class="avatar">MB</div>
+<div>
+<strong>Marijke Blom</strong><br/>
+<small>mede‑oprichter van Hart‑Werk</small>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="visie">
+<div class="container">
+<h2>Visie &amp; Missie</h2>
+<div class="grid">
+<div class="card">
+<h3>Onze visie</h3>
+<p>Een inclusieve IT‑arbeidsmarkt waarin ieder talent kan groeien en organisaties betere producten maken dankzij diverse teams.</p>
+</div>
+<div class="card">
+<h3>Onze missie</h3>
+<p>Wij ontwikkelen talent via maatwerkopleiding, plaatsen hen bij passende opdrachtgevers en begeleiden zowel medewerker als team.</p>
+</div>
+<div class="card">
+<h3>Onze aanpak</h3>
+<ul class="list">
+<li>Strenge selectie op motivatie &amp; leervermogen</li>
+<li>Praktijkgerichte IT‑opleiding</li>
+<li>Coaching &amp; buddy‑systeem op locatie</li>
+<li>Heldere KPI’s en periodieke evaluaties</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="kernwaarden" style="background:var(--soft);">
+<div class="container">
+<h2>Kernwaarden</h2>
+<div class="grid">
+<div class="card"><h3>Duurzame match</h3><p>Niet de snelle plaatsing, maar langdurig resultaat staat centraal.</p></div>
+<div class="card"><h3>Inclusie</h3><p>Wij creëren randvoorwaarden waardoor talent tot bloei komt.</p></div>
+<div class="card"><h3>Kwaliteit</h3><p>Actuele certificeringen en begeleiding door senior IT‑coaches.</p></div>
+<div class="card"><h3>Transparantie</h3><p>Heldere afspraken over doelen, begeleiding en rapportage.</p></div>
+</div>
+</div>
+</section>
+<section id="diensten">
+<div class="container">
+<h2>Diensten</h2>
+<div class="grid">
+<div class="card"><h3>Detavast</h3><p>Gemotiveerd talent dat instroomt via detachering met optie tot overname.</p></div>
+<div class="card"><h3>Teamuitbreiding</h3><p>Snel opschalen met begeleide juniors die rendement leveren.</p></div>
+<div class="card"><h3>Coaching op locatie</h3><p>Senior coach ondersteunt medewerker én teamlead op vaste momenten.</p></div>
+<div class="card"><h3>Academy</h3><p>Maatwerktrajecten (bijv. testautomatisering, data, support, low‑code).</p></div>
+</div>
+</div>
+</section>
+<section id="markten" style="background:var(--soft);">
+<div class="container">
+<h2>Markten</h2>
+<p class="lead">We werken o.a. voor opdrachtgevers in overheid, zorg, finance en tech‑mkb. Op verzoek delen we relevante referenties.</p>
+</div>
+</section>
+<section id="contact">
+<div class="container">
+<h2>Contact</h2>
+<p class="lead">Benieuwd wat Inclusive Solutions voor jouw team kan betekenen? Neem contact op voor een vrijblijvende intake.</p>
+<div class="grid">
+<div class="card">
+<form onsubmit="event.preventDefault(); alert('Bedankt! We nemen contact op.');">
+<label>Naam<br/><input required="" style="width:100%;padding:10px;border:1px solid var(--neutral-border);border-radius:8px" type="text"/></label><br/><br/>
+<label>E‑mail<br/><input required="" style="width:100%;padding:10px;border:1px solid var(--neutral-border);border-radius:8px" type="email"/></label><br/><br/>
+<label>Bericht<br/><textarea rows="5" style="width:100%;padding:10px;border:1px solid var(--neutral-border);border-radius:8px"></textarea></label><br/><br/>
+<button class="btn primary" type="submit">Versturen</button>
+</form>
+</div>
+<div class="card">
+<h3>Inclusive Solutions</h3>
+<p>Wij brengen talent en werkgevers duurzaam samen.<br/>Mail: <a href="mailto:info@inclusive-solutions.example">info@inclusive-solutions.example</a><br/>Tel: <a href="tel:+31101234567">010 – 123 45 67</a></p>
+<p><strong>KvK</strong> 12345678 • <strong>BTW</strong> NL001234567B01</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+<small>© <span id="year"></span> Inclusive Solutions. Alle rechten voorbehouden.</small>
+<small><a href="#">Privacy</a> · <a href="#">Cookies</a> · <a href="#">Voorwaarden</a></small>
+</div>
+</footer>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
