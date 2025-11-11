@@ -21,7 +21,7 @@
     header.navbar { background:#fff; border-bottom:1px solid var(--neutral-border); position: sticky; top: 0; z-index: 50; }
     .nav { display:flex; align-items:center; justify-content:space-between; gap:24px; padding: 12px 0; }
     .brand { display:flex; align-items:center; gap:12px; }
-    .brand img { height: 160px; width:auto; display:block; }
+    .brand img { height: 120px; width: auto; display: block; }
     nav.menu { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
     .menu a { color:#1a1a1a; font-weight:700; padding:10px 12px; border-radius:8px; }
     .menu a:hover { background: var(--soft); text-decoration:none; }
@@ -55,14 +55,45 @@
     .quote-source { color:#555; font-style: italic; margin: 0 0 12px 0; }
     footer { background:#0b0b0c; color:#e9eef5; padding: 36px 0; margin-top: 28px; }
     footer a { color:#d1e9ff; }
-    @media (max-width: 640px) {{ .brand img {{height:110px}} }}
-  </style>
+    }
+  
+@media (max-width: 640px) {
+  .nav { gap: 12px; padding: 8px 0; }
+  .brand img { height: 56px !important; }
+  .menu a { padding: 8px 10px; font-weight: 700; }
+  .container { padding: 0 16px; }
+  .hero-inner { padding: 56px 0 48px; }
+  .hero-inner h1 { font-size: clamp(22px, 6vw, 30px); }
+  .cta { gap: 8px; }
+  .btn { padding: 10px 14px; border-radius: 10px; font-size: 0.95rem; }
+  section { padding: 56px 0; }
+  .grid { grid-template-columns: 1fr; gap: 16px; }
+  .card { padding: 16px; border-radius: 10px; }
+  p.lead { font-size: 1.05rem; }
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  background: #fff;
+  color: #111;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--neutral-border);
+  z-index: 1000;
+}
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+}
+</style>
 </head>
-<body>
+<body><a class="skip-link" href="#inleiding">Ga naar inhoud</a>
 <header class="navbar">
 <div class="container nav">
 <div class="brand">
-<img alt="Inclusive Solutions logo" src="inclusive_logo.png" style="height:320px;width:auto;"/>
+<img alt="Inclusive Solutions logo" src="inclusive_logo.png"/>
 </div>
 <nav aria-label="Hoofdmenu" class="menu">
 <a href="#visie">Visie &amp; Missie</a>
@@ -75,7 +106,7 @@
 </header>
 <div aria-label="Zakelijke headerafbeelding in blauwtinten" class="photoheader" role="img">
 <div class="container hero-inner">
-<h1>IT-talent versterken. Werkgevers ontzorgen. Samen duurzaam succesvol.</h1>
+<h1 style="max-width: 20ch;">IT-talent versterken. Werkgevers ontzorgen. Samen duurzaam succesvol.</h1>
 <p>Opleiding • Plaatsing • Coaching &amp; begeleiding op de werkvloer</p>
 <div class="cta">
 <a class="btn primary" href="#contact">Plan een kennismaking</a>
@@ -88,7 +119,7 @@
 <div class="container">
 <h2>Wat wij doen</h2>
 <p class="lead">Wij geloven dat divers ICT-talent het verschil maakt. Inclusive Solutions vindt, ontwikkelt en detacheert professionals die met focus, analytisch vermogen en praktijkervaring structurele waarde toevoegen binnen IT-teams van onze klanten. Met gerichte opleiding, technisch-inhoudelijke sturing en persoonlijke coaching op de werkvloer zorgen we voor duurzame versterking en blijvend resultaat voor zowel onze opdrachtgevers als onze professionals.</p>
-</div>
+<ul class="list"><li></li></ul></div>
 </section>
 <section id="testimonial" style="background:var(--soft);">
 <div class="container">
@@ -113,15 +144,15 @@
 <div class="grid">
 <div class="card">
 <h3>Onze visie</h3>
-<p>Nederland beschikt over een groot potentieel aan ICT-talent dat in traditionele werving vaak onzichtbaar blijft. Met passende begeleiding en coaching kan dit talent vaak direct effectief en waardevol worden ingezet. Wij zien een arbeidsmarkt waarin deze kwaliteiten worden herkend en benut, en waarin inclusieve teams bijdragen aan structureel betere dienstverlening.</p>
+<p>Nederland beschikt over een groot potentieel aan ICT-talent dat in traditionele werving vaak onzichtbaar blijft. Met passende begeleiding en coaching kan dit talent direct effectief en waardevol worden ingezet binnen ICT-teams van opdrachtgevers. Wij zien een arbeidsmarkt waarin deze kwaliteiten worden herkend en benut, en waarin inclusieve teams bijdragen aan betere dienstverlening en toekomstbestendige digitale oplossingen.</p>
 </div>
 <div class="card">
 <h3>Onze missie</h3>
-<p>Het vergroten van de slagkracht van onze opdrachtgevers door het met gerichte coaching en begeleiding weer in hun kracht zetten van ICT-professionals.
+<p>Wij werven, ontwikkelen en begeleiden ICT-professionals die direct waarde toevoegen binnen de ICT-teams van onze opdrachtgevers. Door persoonlijke coaching en begeleiding op de werkvloer zorgen we dat de professional in zijn kracht staat en de opdrachtgever wordt ontzorgd. Zo versterken we organisaties structureel én leveren we een concrete bijdrage aan een inclusieve arbeidsmarkt en maatschappelijk verantwoord ondernemen.</p>
 </div>
 <div class="card">
 <h3>Onze aanpak</h3>
-<p>Wij begeleiden ICT-professionals die opnieuw instromen of reeds zijn ingestroomd. De basis bij de selectie is een match tussen de wensen en cultuur van de opdrachtgever en het profiel van de professional. Persoonlijke coaching naast technisch-inhoudelijke sturing borgen lange termijn tevredenheid van opdrachtgevers en ICT-professionals.</p></div>
+<p>Wij werken met ICT-professionals die opnieuw instromen in het arbeidsproces en gemotiveerd zijn om hun expertise, ervaring en focus in te zetten binnen een organisatie. In de selectiefase kijken we zorgvuldig naar de match tussen de wensen en cultuur van de opdrachtgever en het profiel van de professional. Tijdens de inzet zorgen onze coaches voor persoonlijke begeleiding op de werkvloer en ondersteuning van het team. Zo verloopt de samenwerking soepel en levert de professional direct structurele waarde in het ICT-team van de opdrachtgever.</p></div>
 </div>
 </div>
 </section>
